@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Bootstarp 5 Project With Traversy Media</title>
 
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css">
+
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -14,7 +16,7 @@
 <body>
     <div class="body">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a href="" class="navbar-brand">Bootstrap Revision</a>
 
@@ -24,9 +26,9 @@
 
                 <div class="collapse navbar-collapse" id="mainMenu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item text-center"><a href="#" class="nav-link">What We Learn</a></li>
-                        <li class="nav-item text-center"><a href="#" class="nav-link">Question</a></li>
-                        <li class="nav-item text-center"><a href="#" class="nav-link">Members</a></li>
+                        <li class="nav-item text-center"><a href="#learn" class="nav-link">What We Learn</a></li>
+                        <li class="nav-item text-center"><a href="#question" class="nav-link">Question</a></li>
+                        <li class="nav-item text-center"><a href="#instructors" class="nav-link">Members</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,7 +171,7 @@
         <!-- end about -->
 
         <!-- React Section -->
-        <section class="py-5 learn bg-dark text-light" id="learn">
+        <section class="py-5 learn bg-dark text-light">
             <div class="container">
                 <div class="row align-items-center justify-content-between g-5">
 
@@ -198,11 +200,214 @@
         </section>
         <!-- end React -->
 
-        <!-- Start Tabs Section -->
-        <section class="py2 tabs" id="tabs"></section>
+        <!-- Start Question Accordion Section -->
+        <section class="py-5 question" id="question">
+            <div class="container">
+
+                <h2 class="title text-center mb-4">Frequently Asked Question</h2>
+
+                <div class="accordion accordion-flush" id="questions">
+
+                    <div class="accordion-item">
+                        <div class="accordion header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#questionOne">Where Exactly Are You Locate?</button>
+                        </div>
+                        <div class="collapse accordion-collapse show" data-bs-parent="#questions" id="questionOne">
+                            <div class="accordion-body">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+                                    neque nobis ab laborum aut deserunt, saepe nulla voluptas quidem minima totam amet
+                                    natus nihil, dolore doloremque! Quis officia porro laboriosam consequuntur?
+                                    Voluptates doloremque impedit ducimus, temporibus voluptatem porro odit beatae
+                                    cupiditate vitae, expedita nam! Aliquid pariatur illum quam perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion header">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#questionTwo">How Much Does It Cost To Attended?</button>
+                        </div>
+                        <div class="collapse accordion-collapse " data-bs-parent="#questions" id="questionTwo">
+                            <div class="accordion-body">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+                                    neque nobis ab laborum aut deserunt, saepe nulla voluptas quidem minima totam amet
+                                    natus nihil, dolore doloremque! Quis officia porro laboriosam consequuntur?
+                                    Voluptates doloremque impedit ducimus, temporibus voluptatem porro odit beatae
+                                    cupiditate vitae, expedita nam! Aliquid pariatur illum quam perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion header">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#questionThree">Where Do I Need To Know?</button>
+                        </div>
+                        <div class="collapse accordion-collapse " data-bs-parent="#questions" id="questionThree">
+                            <div class="accordion-body">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+                                    neque nobis ab laborum aut deserunt, saepe nulla voluptas quidem minima totam amet
+                                    natus nihil, dolore doloremque! Quis officia porro laboriosam consequuntur?
+                                    Voluptates doloremque impedit ducimus, temporibus voluptatem porro odit beatae
+                                    cupiditate vitae, expedita nam! Aliquid pariatur illum quam perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion header">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#questionFour">How Do I Sign Up?</button>
+                        </div>
+                        <div class="collapse accordion-collapse " data-bs-parent="#questions" id="questionFour">
+                            <div class="accordion-body">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+                                    neque nobis ab laborum aut deserunt, saepe nulla voluptas quidem minima totam amet
+                                    natus nihil, dolore doloremque! Quis officia porro laboriosam consequuntur?
+                                    Voluptates doloremque impedit ducimus, temporibus voluptatem porro odit beatae
+                                    cupiditate vitae, expedita nam! Aliquid pariatur illum quam perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion header">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#questionFive">Do You Help Me Find A Job?</button>
+                        </div>
+                        <div class="collapse accordion-collapse " data-bs-parent="#questions" id="questionFive">
+                            <div class="accordion-body">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+                                    neque nobis ab laborum aut deserunt, saepe nulla voluptas quidem minima totam amet
+                                    natus nihil, dolore doloremque! Quis officia porro laboriosam consequuntur?
+                                    Voluptates doloremque impedit ducimus, temporibus voluptatem porro odit beatae
+                                    cupiditate vitae, expedita nam! Aliquid pariatur illum quam perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Questions -->
+
+        <!-- Start Instructor -->
+        <section class="py-5 bg-primary " id="instructors">
+            <div class="container">
+                <h2 class="title text-center text-light mb-4">Our Instructor</h2>
+                <div class="row g-3">
+
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="card ">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/portraits/men/7.jpg" alt="" class="rounded-circle mb-2">
+
+                                <h3 class="card-title">Jhon Doe</h3>
+
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reiciendis deleniti perferendis beatae nihil totam repellendus.</p>
+
+                                <div class="sosial d-flex-align-items-center">
+                                    <a href="" class="px-1"><i class="bi bi-facebook"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-instagram"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="card ">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/portraits/women/12.jpg" alt=""
+                                    class="rounded-circle mb-2">
+
+                                <h3 class="card-title">Jani Doe</h3>
+
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reiciendis deleniti perferendis beatae nihil totam repellendus.</p>
+
+                                <div class="sosial d-flex-align-items-center">
+                                    <a href="" class="px-1"><i class="bi bi-facebook"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-instagram"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="card ">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/portraits/men/11.jpg" alt=""
+                                    class="rounded-circle mb-2">
+
+                                <h3 class="card-title">Steve Smith</h3>
+
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reiciendis deleniti perferendis beatae nihil totam repellendus.</p>
+
+                                <div class="sosial d-flex-align-items-center">
+                                    <a href="" class="px-1"><i class="bi bi-facebook"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-instagram"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <div class="card ">
+                            <div class="card-body">
+                                <img src="https://randomuser.me/portraits/women/11.jpg" alt=""
+                                    class="rounded-circle mb-2">
+
+                                <h3 class="card-title">Sara Smith</h3>
+
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Reiciendis deleniti perferendis beatae nihil totam repellendus.</p>
+
+                                <div class="sosial d-flex-align-items-center">
+                                    <a href="" class="px-1"><i class="bi bi-facebook"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-instagram"></i></a>
+                                    <a href="" class="px-1"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Instructor -->
+
+        <section>
+            <div class="map" id="map"></div>
+        </section>
     </div>
 
+    <!-- Import Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Import Mapbox Js -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+    <!-- Mapbox Script -->
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmFyYXMiLCJhIjoiY2t6MW1tY2tlMDV5ZDJ3bXMxNmt5cHUyNCJ9.XzitJmaSsigUIKJKCcENpA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-71.060982, 42.35725],
+            zoom: 18
+        });
+    </script>
 </body>
 
 </html>
