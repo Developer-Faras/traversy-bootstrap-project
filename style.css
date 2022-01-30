@@ -40,8 +40,8 @@ body{
 
 
 /* Responsive */
-@media (max-width: 991px) {
-    .newslatter-submit .row .title{
-        width: 100%;
+@media (min-width: 768px) {
+    .newlatter-input{
+        width: 50%;
     }
 }
